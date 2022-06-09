@@ -13,6 +13,7 @@ import org.springframework.http.MediaType;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.ResultActions;
+import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,6 +22,7 @@ import java.util.Optional;
 import static org.mockito.Mockito.doReturn;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
+import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
@@ -124,6 +126,20 @@ public class AlbumRecommendationsControllerTest {
         public void shouldDeleteByIdAndReturn200StatusCode() throws Exception {
             mockMvc.perform(delete("/album/2")).andExpect(status().isOk());
         }
+
+    @Test
+  public void shouldResponseWithStatus404IfAlbumIdIsNotFound() throws Exception {
+        mockMvc.perform(delete("/albumRecommendation/1412"))
+                .andDo(print())
+                .andExpect(status().isNotFound());
+    }
+
+    @Test
+    public void shouldTryGetByIdAndReturn400StatusCode() throws Exception {
+        mockMvc.perform(get("/album/time"))
+                .andDo(print())
+                .andExpect(status().isBadRequest());
+    }
 
 
     }

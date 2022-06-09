@@ -20,6 +20,7 @@ import java.util.Optional;
 
 import static org.mockito.Mockito.doReturn;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
+import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
@@ -124,5 +125,18 @@ public class LabelRecommendationsControllerTest {
         mockMvc.perform(delete("/label/2")).andExpect(status().isOk());
     }
 
+    @Test
+    public void shouldResponseWithStatus404IfIdIsNotFound() throws Exception {
+        mockMvc.perform(get("/label/12"))
+                .andDo(print())
+                .andExpect(status().isNotFound());
+    }
+
+    @Test
+    public void shouldTryGetByIdAndReturn400StatusCode() throws Exception {
+        mockMvc.perform(get("/label/time"))
+                .andDo(print())
+                .andExpect(status().isBadRequest());
+    }
 
 }

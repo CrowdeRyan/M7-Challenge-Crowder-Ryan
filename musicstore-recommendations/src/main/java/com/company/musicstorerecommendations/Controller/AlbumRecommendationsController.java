@@ -30,9 +30,9 @@ public class AlbumRecommendationsController {
 
     @GetMapping("/{id}")
     @ResponseStatus(HttpStatus.OK)
-    public AlbumRecommendations getAlbumRecommendationsById(@PathVariable int id) {
+    public AlbumRecommendations getAlbumRecommendationsById(@PathVariable Integer id) {
         Optional<AlbumRecommendations> optionalAlbumRecommendations = repo.findById(id);
-        if (optionalAlbumRecommendations.isPresent() == false) {
+        if (!optionalAlbumRecommendations.isPresent()) {
             throw new BadIdException("there is no album with id " + id);
         }
         return optionalAlbumRecommendations.get();
@@ -44,10 +44,8 @@ public class AlbumRecommendationsController {
         if (album.getId() == null) {
             album.setId(id);
         } else if (album.getId() != id) {
-            throw new BadIdException("The id in your path (" + id + ") is " +
-                    "different from the id in your body (" + album.getId() + ").");
+            throw new BadIdException("The id in your path (" + id + ") is " + "Mistaken. Try again");
         }
-
         repo.save(album);
     }
 

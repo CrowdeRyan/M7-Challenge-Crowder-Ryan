@@ -127,4 +127,17 @@ public class TrackControllerTest {
         mockMvc.perform(delete("/track/8")).andExpect(status().isOk());
     }
 
+    @Test
+    public void shouldResponseWithStatus404IfIdIsNotFound() throws Exception {
+        mockMvc.perform(get("/track/12"))
+                .andDo(print())
+                .andExpect(status().isNotFound());
+    }
+
+    @Test
+    public void shouldTryGetByIdAndReturn404StatusCode() throws Exception {
+        mockMvc.perform(get("/track/time"))
+                .andDo(print())
+                .andExpect(status().isBadRequest());
+    }
 }

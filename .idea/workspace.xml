@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="15e4c6ed-a567-4fe4-a5e9-beddb8ae4902" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/musicstore-catalog/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/musicstore-catalog/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicstore-catalog/src/test/java/com/company/musicstorecatalog/Controller/AlbumControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/musicstore-catalog/src/test/java/com/company/musicstorecatalog/Controller/AlbumControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicstore-catalog/src/test/java/com/company/musicstorecatalog/Controller/ArtistControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/musicstore-catalog/src/test/java/com/company/musicstorecatalog/Controller/ArtistControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicstore-catalog/src/test/java/com/company/musicstorecatalog/Controller/LabelControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/musicstore-catalog/src/test/java/com/company/musicstorecatalog/Controller/LabelControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicstore-catalog/src/test/java/com/company/musicstorecatalog/Controller/TrackControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/musicstore-catalog/src/test/java/com/company/musicstorecatalog/Controller/TrackControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicstore-recommendations/src/main/java/com/company/musicstorerecommendations/Controller/AlbumRecommendationsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/musicstore-recommendations/src/main/java/com/company/musicstorerecommendations/Controller/AlbumRecommendationsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicstore-recommendations/src/main/java/com/company/musicstorerecommendations/Exception/BadIdException.java" beforeDir="false" afterPath="$PROJECT_DIR$/musicstore-recommendations/src/main/java/com/company/musicstorerecommendations/Exception/BadIdException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicstore-recommendations/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/musicstore-recommendations/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicstore-recommendations/src/test/java/com/company/musicstorerecommendations/Controller/AlbumRecommendationsControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/musicstore-recommendations/src/test/java/com/company/musicstorerecommendations/Controller/AlbumRecommendationsControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicstore-recommendations/src/test/java/com/company/musicstorerecommendations/Controller/ArtistRecommendationsControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/musicstore-recommendations/src/test/java/com/company/musicstorerecommendations/Controller/ArtistRecommendationsControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicstore-recommendations/src/test/java/com/company/musicstorerecommendations/Controller/LabelRecommendationsControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/musicstore-recommendations/src/test/java/com/company/musicstorerecommendations/Controller/LabelRecommendationsControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicstore-recommendations/src/test/java/com/company/musicstorerecommendations/Controller/TrackRecommendationsControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/musicstore-recommendations/src/test/java/com/company/musicstorerecommendations/Controller/TrackRecommendationsControllerTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2ALcDjw1nGuM9BHOMwx4N1iK6Zb" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "settings.editor.selected.configurable": "MTConfigurable"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="15e4c6ed-a567-4fe4-a5e9-beddb8ae4902" name="Changes" comment="" />
+      <created>1654792189832</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1654792189832</updated>
+    </task>
+    <servers />
+  </component>
+</project>

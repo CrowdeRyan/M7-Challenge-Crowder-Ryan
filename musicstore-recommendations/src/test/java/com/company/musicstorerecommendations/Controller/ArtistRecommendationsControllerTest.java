@@ -22,6 +22,7 @@ import static org.junit.Assert.*;
 import static org.mockito.Mockito.doReturn;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
+import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
@@ -125,6 +126,20 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
         @Test
         public void shouldDeleteByIdAndReturn200StatusCode() throws Exception {
             mockMvc.perform(delete("/artist/2")).andExpect(status().isOk());
+        }
+
+        @Test
+        public void shouldResponseWithStatus404IfIdIsNotFound() throws Exception {
+            mockMvc.perform(get("/artist/12"))
+                    .andDo(print())
+                    .andExpect(status().isNotFound());
+        }
+
+        @Test
+        public void shouldTryGetByIdAndReturn400StatusCode() throws Exception {
+            mockMvc.perform(get("/artist/time"))
+                    .andDo(print())
+                    .andExpect(status().isBadRequest());
         }
 
 
